@@ -35,7 +35,7 @@ func main() {
 	fmt.Println("Server start 5050")
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Hola mundo desde mi servidor web con Go")
+		//fmt.Fprintf(w, "Hola mundo desde mi servidor web con Go")
 
 		db := dbConn()
 		selDB, err := db.Query("SELECT * FROM empresa")
@@ -63,7 +63,6 @@ func main() {
 			res = append(res, emp)
 
 		}
-		//tmpl.ExecuteTemplate(w, "Index", res)
 		fmt.Println(res)
 		w.Header().Set("Content Type", "aplication/json")
 		w.WriteHeader(200)
