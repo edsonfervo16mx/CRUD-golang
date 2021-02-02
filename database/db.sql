@@ -14,7 +14,7 @@
 
 
 -- Volcando estructura de base de datos para mydb_crud
-CREATE DATABASE IF NOT EXISTS `mydb_crud` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+CREATE DATABASE IF NOT EXISTS `mydb_crud`;
 USE `mydb_crud`;
 
 -- Volcando estructura para tabla mydb_crud.empresa
@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `empresa` (
   `created_empresa` datetime DEFAULT CURRENT_TIMESTAMP,
   `updated_empresa` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_empresa`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 ;
 
 -- Volcando datos para la tabla mydb_crud.empresa: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `empresa` DISABLE KEYS */;

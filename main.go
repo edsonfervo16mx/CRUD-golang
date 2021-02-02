@@ -21,8 +21,8 @@ type Empresa struct {
 
 func dbConn() (db *sql.DB) {
 	dbDriver := "mysql"
-	dbUser := "edsonfer"
-	dbPass := "Edson16/"
+	dbUser := "root"
+	dbPass := ""
 	dbName := "mydb_crud"
 	db, err := sql.Open(dbDriver, dbUser+":"+dbPass+"@/"+dbName)
 	if err != nil {
